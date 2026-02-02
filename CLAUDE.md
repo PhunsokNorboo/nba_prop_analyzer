@@ -102,6 +102,7 @@
 4. **Props move** - Cache for 30 min max, line you saw may be gone
 5. **Rate limits are real** - nba_api will block you without delays
 6. **Projection range sanity check** - If projection (18-28) is way above season avg (16), verify the edge justifies it. Matchup edges are real, but don't over-inflate projections.
+7. **CRITICAL: Defensive rankings are wrong** - PLUS_MINUS proxy gives bad data. DET showed as rank 18 but is actually 4th best defense (110 PPG allowed per ESPN). Need to fix data source for true opponent stats.
 
 ## Future Enhancements (Tracked)
 

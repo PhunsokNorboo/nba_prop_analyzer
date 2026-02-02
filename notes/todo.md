@@ -2,6 +2,20 @@
 
 > Track planned improvements and feature ideas.
 
+## URGENT
+
+### Fix Defensive Rankings Data
+- **Status**: BROKEN
+- **Problem**: Using PLUS_MINUS as proxy gives wrong rankings (DET showed 18th, actually 4th)
+- **Impact**: Picking OVER against elite defenses thinking they're bad
+- **Fix options**:
+  1. Use nba_api `leaguedashteamstats` with `measure_type="Opponent"`
+  2. Scrape ESPN defensive stats page
+  3. Use different endpoint for true opponent PPG
+- **Priority**: Must fix before next run
+
+---
+
 ## High Priority
 
 ### Add Claude API Integration (Tiered)
