@@ -101,6 +101,7 @@
 3. **Minutes can change quickly** - Always check last 5, not just season
 4. **Props move** - Cache for 30 min max, line you saw may be gone
 5. **Rate limits are real** - nba_api will block you without delays
+6. **Verify projections vs actual averages** - If line ≈ season avg, there's no edge (Cam Thomas 2/1: projected 18-28, actual avg 16, line 15.5 = no real edge)
 
 ## Future Enhancements (Tracked)
 
