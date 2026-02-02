@@ -4,11 +4,21 @@
 
 ## High Priority
 
-### Add Anthropic API for Edge Discovery
+### Add Claude API Integration (Tiered)
 - **Status**: Planned
-- **Description**: Use Claude for intelligent edge discovery, not just narrative writing
-- **Rationale**: Claude can identify nuanced edges that rule-based system misses
-- **Dependency**: Budget for API costs
+- **Description**: Add Claude API as optional LLM backend with tier selection
+- **Tiers**:
+  - `free` - Ollama only (current)
+  - `budget` - Haiku (~$1.50/month)
+  - `standard` - Sonnet (~$9/month)
+  - `premium` - Opus 4.5 (~$90/month)
+- **Hybrid approach**: Use Opus for edge discovery, Haiku for narratives (~$50/month)
+- **Implementation**:
+  - Add `ANTHROPIC_API_KEY` to settings
+  - Add `LLM_TIER` setting (free/budget/standard/premium)
+  - Create `generation/claude_client.py` for API calls
+  - Keep Ollama as fallback
+- **Dependency**: User opts in when ready
 
 ### Implement Backtesting Framework
 - **Status**: Planned
